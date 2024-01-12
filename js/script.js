@@ -30,6 +30,9 @@ for (let i = 0; i < 5; i++){
 const seconds = 30;
 countdown.innertText = seconds;
 
+const timeUser = setInterval(() =>{
+    countdown.innerText = --seconds;
+})
 
 
 
