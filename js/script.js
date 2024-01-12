@@ -27,12 +27,18 @@ for (let i = 0; i < 5; i++){
 }
 
 //creo il timer di 30 secondi
-const seconds = 30;
+let seconds = 30;
 countdown.innertText = seconds;
 
-const timeUser = setInterval(() =>{
+const timeLeft = setInterval(() =>{
     countdown.innerText = --seconds;
-})
+    if(seconds === 0){
+        countdown.innerText = 'Fine del tuo tempo'
+        clearInterval(timeLeft)
+    }
+},1000)
+
+
 
 
 
@@ -42,6 +48,6 @@ const timeUser = setInterval(() =>{
 
 //TODO 
 /*
-Da lì parte un timer di 30 secondi.
+
 Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/

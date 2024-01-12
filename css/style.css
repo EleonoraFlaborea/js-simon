@@ -1,7 +1,9 @@
-#numbers-section{
+#f-section{
     font-size: 30px;
     font-weight: 700;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
+
