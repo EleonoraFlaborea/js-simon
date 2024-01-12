@@ -20,15 +20,25 @@ const randomNumbers = Math.floor(Math.random() * 100) +1;
 const extracted = [];
 
 //creo ciclo che mi estra 5 numeri
-
 for (let i = 0; i < 5; i++){
     extracted.push(Math.floor(Math.random() * 100) +1)
+    //li stampo in pagina
+    fiveNumbers.innerText= extracted;
 }
 
-
-//li stampo in pagina
-
-
 //creo il timer di 30 secondi
+const seconds = 30;
+countdown.innertText = seconds;
+
+
+
 
 // stampo in pagina
+
+//chiedo all'utente di inseire i numeri
+
+//TODO 
+/*
+Da lì parte un timer di 30 secondi.
+Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
+Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/
