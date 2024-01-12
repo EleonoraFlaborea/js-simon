@@ -27,27 +27,29 @@ for (let i = 0; i < 5; i++){
 }
 
 //creo il timer di 30 secondi
-let seconds = 30;
-countdown.innertText = seconds;
+let seconds = 5;
+countdown.innerText = seconds;
 
-const timeLeft = setInterval(() =>{
+
+
+const timeUser = setInterval(() =>{
     countdown.innerText = --seconds;
+    //fermo il countdown
     if(seconds === 0){
-        countdown.innerText = 'Fine del tuo tempo'
-        clearInterval(timeLeft)
+        countdown.innerText = ''
+        clearInterval(timeUser)
+        //tolgo i numeri
+        fiveNumbers.innerText = 'Fine del tuo tempo' //! non spariscono i numeri
+        //chiedo all'utente di inserire i numeri con i prompt
+        for (let i = 1; i <= 5 ; i++){
+            let questions = parseInt(prompt (`Dimmi il ${i} numero`));
+            const answer = questions;
+            console.log(answer);
+        }
     }
 },1000)
 
-
-
-
-
-// stampo in pagina
-
-//chiedo all'utente di inseire i numeri
+  
 
 //TODO 
-/*
-
-Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
-Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/
+/* il software dice quanti e quali dei numeri da indovinare sono stati individuati. */
