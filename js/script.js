@@ -27,7 +27,7 @@ for (let i = 0; i < 5; i++){
 }
 
 //creo il timer di 30 secondi
-let seconds = 5;
+let seconds = 30;
 countdown.innerText = seconds;
 
 
